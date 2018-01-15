@@ -18,7 +18,7 @@
     "devicon": "^2.0.0",
     "html-webpack-plugin": "^2.30.1",
     "jquery": "^3.2.1",
-    "digitalmatrix": "github:dougmaitelli/DigitalMatrix",
+    "digitalmatrix": "^1.0.0",
     "semantic-ui-css": "^2.2.12",
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
