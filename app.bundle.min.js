@@ -863,7 +863,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "body {\r\n  background: #000;\r\n  font-family: \"Consolas\";\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.matrix {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.glow {\r\n  -webkit-animation: glow 1s alternate;\r\n  -moz-animation: glow 1s alternate;\r\n  animation: glow 1s alternate;\r\n  -webkit-animation-iteration-count: 2;\r\n  -moz-animation-iteration-count: 2;\r\n  animation-iteration-count: 2;\r\n}\r\n\r\n.mainContainer {\r\n  margin-top: 100px;\r\n}\r\n\r\n.tecnologies {\r\n  font-size: 5rem;\r\n}\r\n\r\n@-webkit-keyframes glow {\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "body {\r\n  background: #000;\r\n  font-family: \"Consolas\";\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n#matrix {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.glow {\r\n  -webkit-animation: glow 1s alternate;\r\n  -moz-animation: glow 1s alternate;\r\n  animation: glow 1s alternate;\r\n  -webkit-animation-iteration-count: 2;\r\n  -moz-animation-iteration-count: 2;\r\n  animation-iteration-count: 2;\r\n}\r\n\r\n.mainContainer {\r\n  margin-top: 100px;\r\n}\r\n\r\n.tecnologies {\r\n  font-size: 5rem;\r\n}\r\n\r\n@-webkit-keyframes glow {\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
