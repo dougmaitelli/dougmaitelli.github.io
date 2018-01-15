@@ -545,14 +545,14 @@ var _digitalmatrix2 = _interopRequireDefault(_digitalmatrix);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
-  _digitalmatrix2.default.generateNumbers(".matrix");
+  var matrix = new _digitalmatrix2.default(".matrix");
 
   (0, _jquery2.default)(window).resize(function () {
     (0, _jquery2.default)(".matrix").empty();
-    _digitalmatrix2.default.generateNumbers(".matrix");
+    matrix.generateNumbers(".matrix");
   });
 
-  _digitalmatrix2.default.startPulsate();
+  matrix.startPulsate();
 });
 
 /***/ }),
@@ -11052,9 +11052,19 @@ return jQuery;
 
 /***/ }),
 /* 16 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("digitalmatrix", [], factory);
+	else if(typeof exports === 'object')
+		exports["digitalmatrix"] = factory();
+	else
+		root["digitalmatrix"] = factory();
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -11126,6 +11136,12 @@ return jQuery;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _jquery = __webpack_require__(1);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -11136,77 +11152,97 @@ var _rainbowvis2 = _interopRequireDefault(_rainbowvis);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var getRandomInt = function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var shuffle = function shuffle(array) {
-  var m = array.length,
-      t,
-      i;
+var DigitalMatrix = function () {
+  function DigitalMatrix(element) {
+    _classCallCheck(this, DigitalMatrix);
 
-  // While there remain elements to shuffle…
-  while (m) {
-    // Pick a remaining element…
-    i = Math.floor(Math.random() * m--);
-
-    // And swap it with the current element.
-    t = array[m];
-    array[m] = array[i];
-    array[i] = t;
+    this.generateNumbers(element);
   }
 
-  return array;
-};
+  _createClass(DigitalMatrix, [{
+    key: "_getRandomInt",
+    value: function _getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  }, {
+    key: "_shuffle",
+    value: function _shuffle(array) {
+      var m = array.length,
+          t,
+          i;
 
-var pulsate = function pulsate() {
-  shuffle((0, _jquery2.default)(".number")).slice(0, (0, _jquery2.default)(".number").length / 20).toggleClass("glow");
-};
+      // While there remain elements to shuffle…
+      while (m) {
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
 
-var generateNumbers = function generateNumbers(element) {
-  var docWidth = (0, _jquery2.default)(element).width();
-  var docHeight = (0, _jquery2.default)(element).height();
-
-  var nWidth = 25;
-  var nHeight = 20;
-
-  var xSteps = Math.floor(docWidth / nWidth);
-  var ySteps = Math.floor(docHeight / nHeight);
-
-  nWidth += docWidth % nWidth / xSteps;
-  nHeight += docHeight % nHeight / ySteps;
-
-  var rainbow = new _rainbowvis2.default();
-  rainbow.setNumberRange(0, xSteps);
-  rainbow.setSpectrum("#42f445", "#8341f4");
-
-  var x = 0;
-  do {
-    var y = 0;
-    do {
-      var opacity = Math.random();
-
-      if (Math.random() < 0.7 && opacity > 0.1) {
-        var n = (0, _jquery2.default)("<div/>").text(("00" + getRandomInt(0, 255).toString(16)).toUpperCase().slice(-2)).addClass("number").css({
-          left: x * nWidth + "px",
-          top: y * nHeight + "px",
-          color: "#" + rainbow.colourAt(x),
-          opacity: opacity
-        });
-        n.appendTo(element);
+        // And swap it with the current element.
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
       }
 
-      y++;
-    } while (y < ySteps);
+      return array;
+    }
+  }, {
+    key: "_pulsate",
+    value: function _pulsate() {
+      this._shuffle((0, _jquery2.default)(".number")).slice(0, (0, _jquery2.default)(".number").length / 20).toggleClass("glow");
+    }
+  }, {
+    key: "generateNumbers",
+    value: function generateNumbers(element) {
+      var docWidth = (0, _jquery2.default)(element).width();
+      var docHeight = (0, _jquery2.default)(element).height();
 
-    x++;
-  } while (x < xSteps);
-};
+      var nWidth = 25;
+      var nHeight = 20;
 
-exports.generateNumbers = generateNumbers;
-exports.startPulsate = function () {
-  setInterval(pulsate, 1000);
-};
+      var xSteps = Math.floor(docWidth / nWidth);
+      var ySteps = Math.floor(docHeight / nHeight);
+
+      nWidth += docWidth % nWidth / xSteps;
+      nHeight += docHeight % nHeight / ySteps;
+
+      var rainbow = new _rainbowvis2.default();
+      rainbow.setNumberRange(0, xSteps);
+      rainbow.setSpectrum("#42f445", "#8341f4");
+
+      var x = 0;
+      do {
+        var y = 0;
+        do {
+          var opacity = Math.random();
+
+          if (Math.random() < 0.7 && opacity > 0.1) {
+            var n = (0, _jquery2.default)("<div/>").text(("00" + this._getRandomInt(0, 255).toString(16)).toUpperCase().slice(-2)).addClass("number").css({
+              left: x * nWidth + "px",
+              top: y * nHeight + "px",
+              color: "#" + rainbow.colourAt(x),
+              opacity: opacity
+            });
+            n.appendTo(element);
+          }
+
+          y++;
+        } while (y < ySteps);
+
+        x++;
+      } while (x < xSteps);
+    }
+  }, {
+    key: "startPulsate",
+    value: function startPulsate() {
+      setInterval(this._pulsate.bind(this), 1000);
+    }
+  }]);
+
+  return DigitalMatrix;
+}();
+
+exports.default = DigitalMatrix;
 
 /***/ }),
 /* 1 */
@@ -21784,6 +21820,7 @@ if (true) {
 
 /***/ })
 /******/ ]);
+});
 //# sourceMappingURL=digitalmatrix.js.map
 
 /***/ })
