@@ -1,17 +1,16 @@
-import "semantic-ui-css/semantic.min.css";
+import "semantic-ui-less/semantic.less";
 import "devicon/devicon.min.css";
 import "../css/style.css";
 
-import $ from "jquery";
 import DigitalMatrix from "digitalmatrix";
 
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
   var matrix = new DigitalMatrix("matrix");
 
-  $(window).resize(() => {
-    $("#matrix").empty();
+  window.onresize = () => {
+    document.getElementById("matrix").innerHTML = "";
     matrix.regenerateNumbers();
-  });
+  };
 
   matrix.startPulsate();
 });
