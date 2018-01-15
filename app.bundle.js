@@ -569,7 +569,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var matrix = new _digitalmatrix2.default("matrix");
 
   (0, _jquery2.default)(window).resize(function () {
-    (0, _jquery2.default)(".matrix").empty();
+    (0, _jquery2.default)("#matrix").empty();
     matrix.regenerateNumbers();
   });
 
