@@ -60,13 +60,56 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */,
 /* 1 */,
-/* 2 */
+/* 2 */,
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(12);
+
+__webpack_require__(14);
+
+var _digitalmatrix = __webpack_require__(18);
+
+var _digitalmatrix2 = _interopRequireDefault(_digitalmatrix);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var matrix = new _digitalmatrix2.default("matrix");
+
+  window.onresize = function () {
+    document.getElementById("matrix").innerHTML = "";
+    matrix.regenerateNumbers();
+  };
+
+  matrix.startPulsate();
+});
+
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports) {
 
 /*
@@ -148,7 +191,52 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 3 */
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(15);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(16)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./style.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./style.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)(false);
+// imports
+
+
+// module
+exports.push([module.i, "#matrix {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.profileAvatar.ui.image {\r\n  width: 250px;\r\n  padding: 3px;\r\n  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12),\r\n    0px 2px 10px 0px rgba(34, 36, 38, 0.15);\r\n}\r\n\r\n.mainContainer {\r\n  margin-top: 100px;\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.tecnologies {\r\n  margin: 70px;\r\n  font-size: 5rem;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -204,7 +292,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(23);
+var	fixUrls = __webpack_require__(17);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -520,147 +608,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 4 */,
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(14);
-
-__webpack_require__(16);
-
-__webpack_require__(24);
-
-var _digitalmatrix = __webpack_require__(26);
-
-var _digitalmatrix2 = _interopRequireDefault(_digitalmatrix);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-document.addEventListener("DOMContentLoaded", function () {
-  var matrix = new _digitalmatrix2.default("matrix");
-
-  window.onresize = function () {
-    document.getElementById("matrix").innerHTML = "";
-    matrix.regenerateNumbers();
-  };
-
-  matrix.startPulsate();
-});
-
-/***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(17);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(3)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../css-loader/index.js!./devicon.min.css", function() {
-			var newContent = require("!!../css-loader/index.js!./devicon.min.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
 /* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(15);
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face{font-family:devicon;src:url(" + escape(__webpack_require__(18)) + ");src:url(" + escape(__webpack_require__(19)) + "?#iefix-hdf3wh)format('embedded-opentype'),url(" + escape(__webpack_require__(20)) + ")format('woff'),url(" + escape(__webpack_require__(21)) + ")format('truetype'),url(" + escape(__webpack_require__(22)) + "#devicon)format('svg');font-weight:400;font-style:normal}[class*=\" devicon-\"],[class^=devicon-]{font-family:devicon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.devicon-safari-line-wordmark:before{content:\"\\E632\"}.devicon-safari-line:before{content:\"\\E63A\"}.devicon-safari-plain-wordmark:before{content:\"\\E63B\"}.devicon-safari-plain:before{content:\"\\E63C\"}.devicon-jetbrains-line-wordmark:before,.devicon-jetbrains-line:before,.devicon-jetbrains-plain-wordmark:before,.devicon-jetbrains-plain:before{content:\"\\E63D\"}.devicon-django-line-wordmark:before,.devicon-django-line:before{content:\"\\E63E\"}.devicon-django-plain-wordmark:before,.devicon-django-plain:before{content:\"\\E63F\"}.devicon-gimp-plain:before{content:\"\\E633\"}.devicon-redhat-plain-wordmark:before{content:\"\\E62A\"}.devicon-redhat-plain:before{content:\"\\E62B\"}.devicon-cplusplus-line-wordmark:before,.devicon-cplusplus-line:before{content:\"\\E634\"}.devicon-cplusplus-plain-wordmark:before,.devicon-cplusplus-plain:before{content:\"\\E635\"}.devicon-csharp-line-wordmark:before,.devicon-csharp-line:before{content:\"\\E636\"}.devicon-csharp-plain-wordmark:before,.devicon-csharp-plain:before{content:\"\\E637\"}.devicon-c-line-wordmark:before,.devicon-c-line:before{content:\"\\E638\"}.devicon-c-plain-wordmark:before,.devicon-c-plain:before{content:\"\\E639\"}.devicon-nodewebkit-line-wordmark:before{content:\"\\E611\"}.devicon-nodewebkit-line:before{content:\"\\E612\"}.devicon-nodewebkit-plain-wordmark:before{content:\"\\E613\"}.devicon-nodewebkit-plain:before{content:\"\\E614\"}.devicon-nginx-original-wordmark:before,.devicon-nginx-original:before,.devicon-nginx-plain-wordmark:before,.devicon-nginx-plain:before{content:\"\\E615\"}.devicon-erlang-plain-wordmark:before{content:\"\\E616\"}.devicon-erlang-plain:before{content:\"\\E617\"}.devicon-doctrine-line-wordmark:before{content:\"\\E618\"}.devicon-doctrine-line:before{content:\"\\E619\"}.devicon-doctrine-plain-wordmark:before{content:\"\\E61A\"}.devicon-doctrine-plain:before{content:\"\\E625\"}.devicon-apache-line-wordmark:before{content:\"\\E626\"}.devicon-apache-line:before{content:\"\\E627\"}.devicon-apache-plain-wordmark:before{content:\"\\E628\"}.devicon-apache-plain:before{content:\"\\E629\"}.devicon-go-line:before{content:\"\\E610\"}.devicon-redis-plain-wordmark:before{content:\"\\E606\"}.devicon-redis-plain:before{content:\"\\E607\"}.devicon-meteor-plain-wordmark:before{content:\"\\E608\"}.devicon-meteor-plain:before{content:\"\\E609\"}.devicon-heroku-line-wordmark:before,.devicon-heroku-original-wordmark:before{content:\"\\E60A\"}.devicon-heroku-line:before,.devicon-heroku-original:before{content:\"\\E60B\"}.devicon-heroku-plain-wordmark:before{content:\"\\E60C\"}.devicon-heroku-plain:before{content:\"\\E60F\"}.devicon-go-plain:before{content:\"\\E61B\"}.devicon-docker-plain-wordmark:before{content:\"\\E61E\"}.devicon-docker-plain:before{content:\"\\E61F\"}.devicon-amazonwebservices-original:before,.devicon-amazonwebservices-plain:before{content:\"\\E603\"}.devicon-amazonwebservices-plain-wordmark:before{content:\"\\E604\"}.devicon-android-plain-wordmark:before{content:\"\\E60D\"}.devicon-android-plain:before{content:\"\\E60E\"}.devicon-angularjs-plain-wordmark:before{content:\"\\E61C\"}.devicon-angularjs-plain:before{content:\"\\E61D\"}.devicon-appcelerator-original:before,.devicon-appcelerator-plain:before{content:\"\\E620\"}.devicon-appcelerator-plain-wordmark:before{content:\"\\E621\"}.devicon-apple-original:before,.devicon-apple-plain:before{content:\"\\E622\"}.devicon-atom-original-wordmark:before,.devicon-atom-plain-wordmark:before{content:\"\\E623\"}.devicon-atom-original:before,.devicon-atom-plain:before{content:\"\\E624\"}.devicon-backbonejs-plain-wordmark:before{content:\"\\E62C\"}.devicon-backbonejs-plain:before{content:\"\\E62D\"}.devicon-bootstrap-plain-wordmark:before{content:\"\\E62E\"}.devicon-bootstrap-plain:before{content:\"\\E62F\"}.devicon-bower-line-wordmark:before{content:\"\\E630\"}.devicon-bower-line:before{content:\"\\E631\"}.devicon-bower-plain-wordmark:before{content:\"\\E64E\"}.devicon-bower-plain:before{content:\"\\E64F\"}.devicon-chrome-plain-wordmark:before{content:\"\\E665\"}.devicon-chrome-plain:before{content:\"\\E666\"}.devicon-codeigniter-plain-wordmark:before{content:\"\\E667\"}.devicon-codeigniter-plain:before{content:\"\\E668\"}.devicon-coffeescript-original-wordmark:before,.devicon-coffeescript-plain-wordmark:before{content:\"\\E669\"}.devicon-coffeescript-original:before,.devicon-coffeescript-plain:before{content:\"\\E66A\"}.devicon-css3-plain-wordmark:before{content:\"\\E678\"}.devicon-css3-plain:before{content:\"\\E679\"}.devicon-debian-plain-wordmark:before{content:\"\\E67E\"}.devicon-debian-plain:before{content:\"\\E67F\"}.devicon-dot-net-plain-wordmark:before{content:\"\\E6D3\"}.devicon-dot-net-plain:before{content:\"\\E6D4\"}.devicon-drupal-plain-wordmark:before{content:\"\\E6E2\"}.devicon-drupal-plain:before{content:\"\\E6E3\"}.devicon-firefox-plain-wordmark:before{content:\"\\E75D\"}.devicon-firefox-plain:before{content:\"\\E75E\"}.devicon-foundation-plain-wordmark:before{content:\"\\E7A2\"}.devicon-foundation-plain:before{content:\"\\E7A3\"}.devicon-git-plain-wordmark:before{content:\"\\E7A7\"}.devicon-git-plain:before{content:\"\\E7A8\"}.devicon-grunt-line-wordmark:before{content:\"\\E7A9\"}.devicon-grunt-line:before{content:\"\\E7AA\"}.devicon-grunt-plain-wordmark:before{content:\"\\E7EA\"}.devicon-grunt-plain:before{content:\"\\E7EB\"}.devicon-gulp-plain:before{content:\"\\E7EC\"}.devicon-html5-plain-wordmark:before{content:\"\\E7F6\"}.devicon-html5-plain:before{content:\"\\E7F7\"}.devicon-ie10-original:before,.devicon-ie10-plain:before{content:\"\\E7F8\"}.devicon-illustrator-line:before{content:\"\\E7F9\"}.devicon-illustrator-plain:before{content:\"\\E7FA\"}.devicon-inkscape-plain-wordmark:before{content:\"\\E834\"}.devicon-inkscape-plain:before{content:\"\\E835\"}.devicon-java-plain-wordmark:before{content:\"\\E841\"}.devicon-java-plain:before{content:\"\\E842\"}.devicon-javascript-plain:before{content:\"\\E845\"}.devicon-jquery-plain-wordmark:before{content:\"\\E849\"}.devicon-jquery-plain:before{content:\"\\E84A\"}.devicon-krakenjs-plain-wordmark:before{content:\"\\E84F\"}.devicon-krakenjs-plain:before{content:\"\\E850\"}.devicon-laravel-plain-wordmark:before{content:\"\\E851\"}.devicon-laravel-plain:before{content:\"\\E852\"}.devicon-less-plain-wordmark:before{content:\"\\E853\"}.devicon-linux-plain:before{content:\"\\EB1C\"}.devicon-mongodb-plain-wordmark:before{content:\"\\EB43\"}.devicon-mongodb-plain:before{content:\"\\EB44\"}.devicon-moodle-plain-wordmark:before{content:\"\\EB5A\"}.devicon-moodle-plain:before{content:\"\\EB5B\"}.devicon-mysql-plain-wordmark:before{content:\"\\EB60\"}.devicon-mysql-plain:before{content:\"\\EB61\"}.devicon-nodejs-plain-wordmark:before{content:\"\\EB69\"}.devicon-nodejs-plain:before{content:\"\\EB6A\"}.devicon-oracle-original:before,.devicon-oracle-plain:before{content:\"\\EB6B\"}.devicon-photoshop-line:before{content:\"\\EB6C\"}.devicon-photoshop-plain:before{content:\"\\EB6D\"}.devicon-php-plain:before{content:\"\\EB71\"}.devicon-postgresql-plain-wordmark:before{content:\"\\EB7C\"}.devicon-postgresql-plain:before{content:\"\\EB7D\"}.devicon-python-plain-wordmark:before{content:\"\\EB88\"}.devicon-python-plain:before{content:\"\\EB89\"}.devicon-rails-plain-wordmark:before{content:\"\\EBA2\"}.devicon-rails-plain:before{content:\"\\EBA3\"}.devicon-react-original-wordmark:before,.devicon-react-plain-wordmark:before{content:\"\\E600\"}.devicon-react-original:before,.devicon-react-plain:before{content:\"\\E601\"}.devicon-ruby-plain-wordmark:before{content:\"\\EBC9\"}.devicon-ruby-plain:before{content:\"\\EBCA\"}.devicon-sass-original:before,.devicon-sass-plain:before{content:\"\\EBCB\"}.devicon-symfony-original-wordmark:before,.devicon-symfony-plain-wordmark:before{content:\"\\E602\"}.devicon-symfony-original:before,.devicon-symfony-plain:before{content:\"\\E605\"}.devicon-travis-plain-wordmark:before{content:\"\\EBCC\"}.devicon-travis-plain:before{content:\"\\EBCD\"}.devicon-trello-plain-wordmark:before{content:\"\\EBCE\"}.devicon-trello-plain:before{content:\"\\EBCF\"}.devicon-ubuntu-plain-wordmark:before{content:\"\\EBD0\"}.devicon-ubuntu-plain:before{content:\"\\EBD1\"}.devicon-vim-plain:before{content:\"\\EBF3\"}.devicon-windows8-original-wordmark:before,.devicon-windows8-plain-wordmark:before{content:\"\\EBF4\"}.devicon-windows8-original:before,.devicon-windows8-plain:before{content:\"\\EBF5\"}.devicon-wordpress-plain-wordmark:before{content:\"\\EBFD\"}.devicon-wordpress-plain:before{content:\"\\EBFE\"}.devicon-yii-plain-wordmark:before{content:\"\\EC01\"}.devicon-yii-plain:before{content:\"\\EC02\"}.devicon-zend-plain-wordmark:before{content:\"\\EC03\"}.devicon-zend-plain:before{content:\"\\EC04\"}.devicon-amazonwebservices-original.colored,.devicon-amazonwebservices-plain-wordmark.colored,.devicon-amazonwebservices-plain.colored{color:#F7A80D}.devicon-android-plain-wordmark.colored,.devicon-android-plain.colored{color:#A4C439}.devicon-angularjs-plain-wordmark.colored,.devicon-angularjs-plain.colored{color:#c4473a}.devicon-apache-line-wordmark.colored,.devicon-apache-line.colored,.devicon-apache-plain-wordmark.colored,.devicon-apache-plain.colored{color:#303284}.devicon-appcelerator-original.colored,.devicon-appcelerator-plain-wordmark.colored,.devicon-appcelerator-plain.colored{color:#ac162c}.devicon-apple-original.colored,.devicon-apple-plain.colored{color:#000}.devicon-atom-original-wordmark.colored,.devicon-atom-original.colored,.devicon-atom-plain-wordmark.colored,.devicon-atom-plain.colored{color:#67595D}.devicon-backbonejs-plain-wordmark.colored,.devicon-backbonejs-plain.colored{color:#002A41}.devicon-bootstrap-plain-wordmark.colored,.devicon-bootstrap-plain.colored{color:#59407f}.devicon-bower-line-wordmark.colored,.devicon-bower-line.colored,.devicon-bower-plain-wordmark.colored,.devicon-bower-plain.colored{color:#ef5734}.devicon-c-line-wordmark.colored,.devicon-c-line.colored,.devicon-c-plain-wordmark.colored,.devicon-c-plain.colored{color:#03599c}.devicon-chrome-plain-wordmark.colored,.devicon-chrome-plain.colored{color:#ce4e4e}.devicon-codeigniter-plain-wordmark.colored,.devicon-codeigniter-plain.colored{color:#ee4323}.devicon-coffeescript-original-wordmark.colored,.devicon-coffeescript-original.colored,.devicon-coffeescript-plain-wordmark.colored,.devicon-coffeescript-plain.colored{color:#28334c}.devicon-cplusplus-line-wordmark.colored,.devicon-cplusplus-line.colored,.devicon-cplusplus-plain-wordmark.colored,.devicon-cplusplus-plain.colored{color:#9c033a}.devicon-csharp-line-wordmark.colored,.devicon-csharp-line.colored,.devicon-csharp-plain-wordmark.colored,.devicon-csharp-plain.colored{color:#68217a}.devicon-css3-plain-wordmark.colored,.devicon-css3-plain.colored{color:#3d8fc6}.devicon-debian-plain-wordmark.colored,.devicon-debian-plain.colored{color:#A80030}.devicon-django-line-wordmark.colored,.devicon-django-line.colored,.devicon-django-plain-wordmark.colored,.devicon-django-plain.colored{color:#003A2B}.devicon-docker-plain-wordmark.colored,.devicon-docker-plain.colored{color:#019bc6}.devicon-doctrine-line-wordmark.colored,.devicon-doctrine-line.colored,.devicon-doctrine-plain-wordmark.colored,.devicon-doctrine-plain.colored{color:#f56d39}.devicon-dot-net-plain-wordmark.colored,.devicon-dot-net-plain.colored{color:#1384c8}.devicon-drupal-plain-wordmark.colored,.devicon-drupal-plain.colored{color:#0073BA}.devicon-erlang-plain-wordmark.colored,.devicon-erlang-plain.colored{color:#a90533}.devicon-firefox-plain-wordmark.colored,.devicon-firefox-plain.colored{color:#DD732A}.devicon-foundation-plain-wordmark.colored,.devicon-foundation-plain.colored{color:#008cba}.devicon-gimp-plain-wordmark.colored,.devicon-gimp-plain.colored{color:#716955}.devicon-git-plain-wordmark.colored,.devicon-git-plain.colored{color:#f34f29}.devicon-go-line.colored,.devicon-go-plain.colored{color:#000}.devicon-grunt-line-wordmark.colored,.devicon-grunt-line.colored,.devicon-grunt-plain-wordmark.colored,.devicon-grunt-plain.colored{color:#fcaa1a}.devicon-gulp-plain.colored{color:#eb4a4b}.devicon-heroku-line-wordmark.colored,.devicon-heroku-line.colored,.devicon-heroku-original-wordmark.colored,.devicon-heroku-original.colored,.devicon-heroku-plain-wordmark.colored,.devicon-heroku-plain.colored{color:#6762a6}.devicon-html5-plain-wordmark.colored,.devicon-html5-plain.colored{color:#e54d26}.devicon-ie10-original.colored,.devicon-ie10-plain.colored{color:#1EBBEE}.devicon-illustrator-line.colored,.devicon-illustrator-plain.colored{color:#faa625}.devicon-inkscape-plain-wordmark.colored,.devicon-inkscape-plain.colored{color:#000}.devicon-java-plain-wordmark.colored,.devicon-java-plain.colored{color:#EA2D2E}.devicon-javascript-plain.colored{color:#f0db4f}.devicon-jetbrains-line-wordmark.colored,.devicon-jetbrains-line.colored,.devicon-jetbrains-plain-wordmark.colored,.devicon-jetbrains-plain.colored{color:#F68B1F}.devicon-jquery-plain-wordmark.colored,.devicon-jquery-plain.colored{color:#0769ad}.devicon-krakenjs-plain-wordmark.colored,.devicon-krakenjs-plain.colored{color:#0081C2}.devicon-laravel-plain-wordmark.colored,.devicon-laravel-plain.colored{color:#fd4f31}.devicon-less-plain-wordmark.colored{color:#2a4d80}.devicon-linux-plain.colored{color:#000}.devicon-meteor-plain-wordmark.colored,.devicon-meteor-plain.colored{color:#df5052}.devicon-mongodb-plain-wordmark.colored,.devicon-mongodb-plain.colored{color:#4FAA41}.devicon-moodle-plain-wordmark.colored,.devicon-moodle-plain.colored{color:#F7931E}.devicon-mysql-plain-wordmark.colored,.devicon-mysql-plain.colored{color:#00618a}.devicon-nginx-original-wordmark.colored,.devicon-nginx-original.colored,.devicon-nginx-plain-wordmark.colored,.devicon-nginx-plain.colored{color:#090}.devicon-nodejs-plain-wordmark.colored,.devicon-nodejs-plain.colored{color:#83CD29}.devicon-nodewebkit-line-wordmark.colored,.devicon-nodewebkit-line.colored,.devicon-nodewebkit-plain-wordmark.colored,.devicon-nodewebkit-plain.colored{color:#3d3b47}.devicon-oracle-original.colored,.devicon-oracle-plain-wordmark.colored,.devicon-oracle-plain.colored{color:#EA1B22}.devicon-photoshop-line.colored,.devicon-photoshop-plain.colored{color:#80b5e2}.devicon-php-plain.colored{color:#6181b6}.devicon-postgresql-plain-wordmark.colored,.devicon-postgresql-plain.colored{color:#336791}.devicon-python-plain-wordmark.colored,.devicon-python-plain.colored{color:#ffd845}.devicon-rails-plain-wordmark.colored,.devicon-rails-plain.colored{color:#a62c46}.devicon-ruby-plain-wordmark.colored,.devicon-ruby-plain.colored{color:#d91404}.devicon-safari-line-wordmark.colored,.devicon-safari-line.colored,.devicon-safari-plain-wordmark.colored,.devicon-safari-plain.colored{color:#1B88CA}.devicon-react-original-wordmark.colored,.devicon-react-original.colored,.devicon-react-plain-wordmark.colored,.devicon-react-plain.colored{color:#61dafb}.devicon-redhat-original-wordmark.colored,.devicon-redhat-original.colored,.devicon-redhat-plain-wordmark.colored,.devicon-redhat-plain.colored{color:#e93442}.devicon-redis-plain-wordmark.colored,.devicon-redis-plain.colored{color:#d82c20}.devicon-sass-original.colored,.devicon-sass-plain-wordmark.colored,.devicon-sass-plain.colored{color:#c69}.devicon-symfony-original-wordmark.colored,.devicon-symfony-original.colored,.devicon-symfony-plain-wordmark.colored,.devicon-symfony-plain.colored{color:#1A171B}.devicon-travis-plain-wordmark.colored,.devicon-travis-plain.colored{color:#bb2031}.devicon-trello-plain-wordmark.colored,.devicon-trello-plain.colored{color:#23719f}.devicon-ubuntu-plain-wordmark.colored,.devicon-ubuntu-plain.colored{color:#dd4814}.devicon-vim-plain.colored{color:#179a33}.devicon-windows8-original-wordmark.colored,.devicon-windows8-original.colored,.devicon-windows8-plain-wordmark.colored,.devicon-windows8-plain.colored{color:#00adef}.devicon-wordpress-plain-wordmark.colored,.devicon-wordpress-plain.colored{color:#494949}.devicon-yii-plain-wordmark.colored,.devicon-yii-plain.colored{color:#0073bb}.devicon-zend-plain-wordmark.colored,.devicon-zend-plain.colored{color:#68b604}", ""]);
-
-// exports
-
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "devicon.eot?478292ee89c6ed097c8d79908ae5b1dd";
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "devicon.eot?478292ee89c6ed097c8d79908ae5b1dd";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fd2d16f23d2fb36bf259b93ae75e0d42.woff";
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "devicon.ttf?b6ba8105eea98fe99e74c8b8c844f266";
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "devicon.svg?279702e05976a44fbbafe245f4085c31";
-
-/***/ }),
-/* 23 */
 /***/ (function(module, exports) {
 
 
@@ -755,52 +703,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(25);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(3)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./style.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./style.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "#matrix {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.profileAvatar.ui.image {\r\n  width: 250px;\r\n  padding: 3px;\r\n  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12),\r\n    0px 2px 10px 0px rgba(34, 36, 38, 0.15);\r\n}\r\n\r\n.mainContainer {\r\n  margin-top: 100px;\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.tecnologies {\r\n  margin: 70px;\r\n  font-size: 5rem;\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 26 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
