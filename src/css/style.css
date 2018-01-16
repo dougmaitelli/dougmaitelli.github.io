@@ -6,11 +6,19 @@
   height: 100%;
 }
 
+.profileAvatar.ui.image {
+  width: 250px;
+  padding: 3px;
+  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12),
+    0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+}
+
 .mainContainer {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .tecnologies {
+  margin: 70px;
   font-size: 5rem;
 }
