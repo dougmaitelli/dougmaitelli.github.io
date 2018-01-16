@@ -794,7 +794,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "#matrix {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.mainContainer {\r\n  margin-top: 100px;\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.tecnologies {\r\n  font-size: 5rem;\r\n}\r\n", ""]);
+exports.push([module.i, "#matrix {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.profileAvatar.ui.image {\r\n  width: 250px;\r\n  padding: 3px;\r\n  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12),\r\n    0px 2px 10px 0px rgba(34, 36, 38, 0.15);\r\n}\r\n\r\n.mainContainer {\r\n  margin-top: 100px;\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.tecnologies {\r\n  margin: 70px;\r\n  font-size: 5rem;\r\n}\r\n", ""]);
 
 // exports
 
