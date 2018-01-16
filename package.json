@@ -12,7 +12,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "devicon": "^2.0.0",
-    "digitalmatrix": "^1.0.0"
+    "digitalmatrix": "^1.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

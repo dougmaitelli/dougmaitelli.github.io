@@ -1,4 +1,4 @@
-import "semantic-ui-less/semantic.less";
+import "../../semantic-theme/semantic.less";
 import "devicon/devicon.min.css";
 import "../css/style.css";
 

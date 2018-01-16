@@ -1,10 +1,3 @@
-body {
-  background: #000;
-  font-family: "Consolas";
-  padding: 0;
-  margin: 0;
-}
-
 #matrix {
   position: fixed;
   top: 0;
@@ -13,25 +6,11 @@ body {
   height: 100%;
 }
 
-.glow {
-  -webkit-animation: glow 1s alternate;
-  -moz-animation: glow 1s alternate;
-  animation: glow 1s alternate;
-  -webkit-animation-iteration-count: 2;
-  -moz-animation-iteration-count: 2;
-  animation-iteration-count: 2;
-}
-
 .mainContainer {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .tecnologies {
   font-size: 5rem;
-}
-
-@-webkit-keyframes glow {
-  to {
-    opacity: 1;
-  }
 }
