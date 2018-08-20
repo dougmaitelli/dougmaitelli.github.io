@@ -1,12 +1,10 @@
-const webpack = require("webpack");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const path = require("path");
 
 module.exports = {
   entry: {
-    "app.bundle": "./src/js/app.js",
     "app.bundle.min": "./src/js/app.js"
   },
   devtool: "source-map",
@@ -22,10 +20,8 @@ module.exports = {
   module: {
     rules: [
       {
-        use: ExtractTextPlugin.extract({
-          use: ["css-loader", "less-loader"]
-        }),
-        test: /\.less$/
+        test: /\.less$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
       },
       {
         test: /\.css$/,
@@ -52,19 +48,11 @@ module.exports = {
     ]
   },
   plugins: [
-    /*new webpack.optimize.UglifyJsPlugin({
-      include: /\.min\.js$/,
-      minimize: true
-    }),*/
-    new ExtractTextPlugin({
+    new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css"
     }),
     new HtmlWebpackPlugin({
-      chunks: ["app.bundle.min"],
       template: "./src/index.html"
     })
-  ],
-  devServer: {
-    inline: true
-  }
+  ]
 };
