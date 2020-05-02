@@ -9866,8 +9866,8 @@ a.ui.inverted.grey.header:hover {
 *******************************/
 @font-face {
   font-family: 'Icons';
-  src: url(icons.eot?8e3c7f5520f5ae906c6cf6d7f3ddcd19);
-  src: url(icons.eot?8e3c7f5520f5ae906c6cf6d7f3ddcd19?#iefix) format('embedded-opentype'), url(0ab54153eeeca0ce03978cc463b257f7.woff2) format('woff2'), url(faff92145777a3cbaf8e7367b4807987.woff) format('woff'), url(icons.ttf?b87b9ba532ace76ae9f6edfe9f72ded2) format('truetype'), url(icons.svg?962a1bf31c081691065fe333d9fa8105#icons) format('svg');
+  src: url(icons.eot?a01e3f2d6c83dc3aee175e2482b3f777);
+  src: url(icons.eot?a01e3f2d6c83dc3aee175e2482b3f777?#iefix) format('embedded-opentype'), url(38c6d8bab26db77d8c806813e1497763.woff2) format('woff2'), url(425399f81e4ce7cbd967685402ba0260.woff) format('woff'), url(icons.ttf?c656b8caa454ed19b9a2ef7f4f5b8fea) format('truetype'), url(icons.svg?62d9dae4e0040e81c980950003df0e07#icons) format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -13830,8 +13830,8 @@ i.icon.youtube.play:before {
 /* Load & Define Icon Font */
 @font-face {
   font-family: 'outline-icons';
-  src: url(outline-icons.eot?701ae6abd4719e9c2ada3535a497b341);
-  src: url(outline-icons.eot?701ae6abd4719e9c2ada3535a497b341?#iefix) format('embedded-opentype'), url(cd6c777f1945164224dee082abaea03a.woff2) format('woff2'), url(ef60a4f6c25ef7f39f2d25a748dbecfe.woff) format('woff'), url(outline-icons.ttf?ad97afd3337e8cda302d10ff5a4026b8) format('truetype'), url(outline-icons.svg?82f60bd0b94a1ed68b1e6e309ce2e8c3#icons) format('svg');
+  src: url(outline-icons.eot?752905fa5edf21fc52a10a0c1ca9c7a4);
+  src: url(outline-icons.eot?752905fa5edf21fc52a10a0c1ca9c7a4?#iefix) format('embedded-opentype'), url(687a4990ea22bb1a49d469a5d9319790.woff2) format('woff2'), url(ddae9b1ba9b0b42f58809904b0b21349.woff) format('woff'), url(outline-icons.ttf?5367103510b27b78482794590e1ce3b0) format('truetype'), url(outline-icons.svg?9c4845b4b41ef40a22faee76144fa816#icons) format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -14210,8 +14210,8 @@ i.icon.star.empty:before {
 /* Load & Define Brand Font */
 @font-face {
   font-family: 'brand-icons';
-  src: url(brand-icons.eot?13db00b7a34fee4d819ab7f9838cc428);
-  src: url(brand-icons.eot?13db00b7a34fee4d819ab7f9838cc428?#iefix) format('embedded-opentype'), url(e8c322de9658cbeb8a774b6624167c2c.woff2) format('woff2'), url(a046592bac8f2fd96e994733faf3858c.woff) format('woff'), url(brand-icons.ttf?c5ebe0b32dc1b5cc449a76c4204d13bb) format('truetype'), url(brand-icons.svg?a1a749e89f578a49306ec2b055c073da#icons) format('svg');
+  src: url(brand-icons.eot?d68fa3e67dbb653a13cec44b1bcabcfe);
+  src: url(brand-icons.eot?d68fa3e67dbb653a13cec44b1bcabcfe?#iefix) format('embedded-opentype'), url(278156e41e0ad908cf7f841b17130502.woff2) format('woff2'), url(cac87dc00c87a5d74711d0276713808a.woff) format('woff'), url(brand-icons.ttf?65a2fb6d9aaa164b41a039302093995b) format('truetype'), url(brand-icons.svg?6729d29753e000c17489ed43135ba8d5#icons) format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -18717,4 +18717,4 @@ a.ui.basic.label:hover {
 /* Modules */
 
 
-/*# sourceMappingURL=app.bundle.min.487100270dcd6c9c3e80.css.map*/
+/*# sourceMappingURL=app.bundle.min.e39b1bea760cd2e9e7c2.css.map*/
