@@ -10,24 +10,25 @@
   },
   "author": "Douglas Maitelli",
   "license": "UNLICENSED",
-  "dependencies": {},
+  "dependencies": {
+    "digitalmatrix": "^1.2.3"
+  },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.5.3",
-    "digitalmatrix": "^1.2.1",
-    "file-loader": "^6.0.0",
-    "gh-pages": "^2.2.0",
-    "html-webpack-plugin": "^4.3.0",
-    "less": "^3.11.1",
-    "less-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^0.9.0",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^0.11.1",
     "semantic-ui-less": "^2.4.1",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
