@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   var matrix = new DigitalMatrix("matrix");
 
   window.onresize = () => {
-    document.getElementById("matrix").innerHTML = "";
-    matrix.regenerateNumbers();
+    matrix.resize();
   };
 
   matrix.startPulsate();
