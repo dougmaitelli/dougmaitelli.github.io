@@ -5,5 +5,7 @@ ghpages.publish(
   {
     branch: "master"
   },
-  function(err) {}
+  function(err) {
+    console.log(err);
+  }
 );
