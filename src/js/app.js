@@ -1,4 +1,4 @@
-import "../../semantic-theme/semantic.less";
+import "semantic-ui-css/semantic.min.css";
 import "../css/style.css";
 
 import DigitalMatrix from "digitalmatrix";

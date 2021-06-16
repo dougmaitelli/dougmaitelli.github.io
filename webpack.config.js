@@ -12,28 +12,19 @@ module.exports = {
     path: __dirname + "/build",
     filename: "[name].js"
   },
-  resolve: {
-    alias: {
-      "../../theme.config$": path.join(__dirname, "semantic-theme/theme.config")
-    }
-  },
   module: {
     rules: [
-      {
-        test: /\.less$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
-      },
       {
         test: /\.css$/,
         use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       },
       {
         test: /\.jpe?g$|\.gif$|\.png$|\.ttf$|\.eot$|\.svg$/,
-        use: "file-loader?name=[name].[ext]?[hash]"
+        type: 'asset/resource'
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "url-loader?limit=10000&mimetype=application/fontwoff"
+        type: 'asset/resource'
       },
       {
         test: /\.js$/,
@@ -53,6 +44,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/bg-only.html",
+      filename: "bg-only.html"
     })
   ]
 };
