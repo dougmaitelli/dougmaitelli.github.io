@@ -1,7 +1,7 @@
 # Resume
 
 My professional resume.
-https://dougmaitelli.github.io/resume/
+https://dougmaitelli.github.io/
 
 ## Usage
 
