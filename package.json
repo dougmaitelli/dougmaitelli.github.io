@@ -1,30 +1,28 @@
 {
-  "name": "dougmaitelli.github.io",
-  "version": "1.1.0",
-  "description": "dougmaitelli.github.io",
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dougmaitelli/resume.git"
+  },
   "author": "Douglas Maitelli",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --progress",
+    "dev": "onchange 'resume.json' -- $npm_execpath run build",
+    "build": "mkdirp ./out && $npm_execpath run build:main && $npm_execpath run build:print",
+    "build:main": "resumed render resume.json --output ./out/index.html --theme jsonresume-theme-even",
+    "build:print": "resumed render resume.json --output ./out/print.html --theme jsonresume-theme-caffeine",
     "deploy": "node ./scripts/deploy.js"
   },
-  "dependencies": {
-    "digitalmatrix": "^2.1.0",
-    "semantic-ui-css": "^2.5.0"
-  },
+  "type": "module",
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^7.1.1",
-    "gh-pages": "^6.1.1",
-    "html-webpack-plugin": "^5.6.0",
-    "mini-css-extract-plugin": "^2.9.0",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "gh-pages": "^6.3.0",
+    "jsonresume-theme-caffeine": "^1.2.3",
+    "jsonresume-theme-even": "^0.26.1",
+    "mkdirp": "^3.0.1",
+    "onchange": "^7.1.0",
+    "resumed": "^6.1.0"
   }
 }

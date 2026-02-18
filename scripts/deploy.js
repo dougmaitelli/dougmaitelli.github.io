@@ -1,11 +1,3 @@
-var ghpages = require("gh-pages");
+import { publish } from "gh-pages";
 
-ghpages.publish(
-  "build",
-  {
-    branch: "master"
-  },
-  function(err) {
-    console.log(err);
-  }
-);
+publish("out", function () { });

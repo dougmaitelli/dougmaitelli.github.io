@@ -1,0 +1,204 @@
+{
+  "basics": {
+    "name": "Douglas Maitelli",
+    "label": "Senior Software Engineer",
+    "image": "https://avatars3.githubusercontent.com/u/1277391",
+    "picture": "https://avatars3.githubusercontent.com/u/1277391",
+    "email": "dougmaitelli@gmail.com",
+    "website": "http://dougmaitelli.github.io",
+    "summary": "I like challenges, anything that requires deep analysis and provide me with an opportunity to design an elegant solution. Always looking to deliver something aiming for the long-term that can be easily maintained and extended. I try to always use the opportunities I have to improve my skills and learn new technologies.",
+    "location": {
+      "countryCode": "US",
+      "region": "Washington"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "dougmaitelli",
+        "url": "https://github.com/dougmaitelli"
+      },
+      {
+        "network": "linkedin",
+        "username": "Douglas Maitelli",
+        "url": "https://www.linkedin.com/in/dougmaitelli"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "SAP Concur",
+      "company": "SAP Concur",
+      "location": "United States",
+      "position": "Senior Software Engineer",
+      "website": "https://www.sap.com / https://www.concur.com/",
+      "startDate": "2019-04-15",
+      "summary": "Develop integration services for Concur Expense processing and financial systems",
+      "highlights": [
+        "Designed the new framework used for integrations with third-party financial systems",
+        "Delivered multiple integrations with financial systems such as Xero, Quickbooks and Sage Intacct"
+      ]
+    },
+    {
+      "name": "SAP SE",
+      "company": "SAP SE",
+      "location": "Germany",
+      "position": "Senior Solutions Architect / Software Engineer",
+      "website": "https://www.sap.com",
+      "startDate": "2017-02-01",
+      "endDate": "2019-04-14",
+      "summary": "Customer requirements gathering / study, project execution, development",
+      "highlights": [
+        "Traveled to customer sites over Europe to gather requirements and design solution proposals",
+        "Coordinate development teams across different locations to deliver proposed solutions"
+      ]
+    },
+    {
+      "name": "Flimbo",
+      "company": "Flimbo",
+      "location": "Brazil",
+      "position": "Co-Founder",
+      "startDate": "2016-03-01",
+      "endDate": "2018-12-31",
+      "summary": "Development of the online vectorial art editor, CI / CD pipeline and infrastructure (AWS)",
+      "highlights": [
+        "First Prize at UFRGS Entrepreneurship Marathon"
+      ]
+    },
+    {
+      "name": "SAP Labs Latin America",
+      "company": "SAP Labs Latin America",
+      "location": "Brazil",
+      "position": "Senior Solutions Architect / Software Engineer",
+      "website": "https://www.sap.com",
+      "startDate": "2012-07-01",
+      "endDate": "2017-01-01",
+      "summary": "Customer requirements gathering / study, project execution, development",
+      "highlights": [
+        "Designed and developed solutions for customers of SAP products",
+        "Design Thinking Coach",
+        "Trained in SAP HANA",
+        "Trained in SAPUI5",
+        "Co-creator of the SAP SmartOffice project",
+        "Tech lead of the SAP Arrival Guide App"
+      ]
+    },
+    {
+      "name": "Versul Tecnologia de Acesso Inteligente",
+      "company": "Versul Tecnologia de Acesso Inteligente",
+      "location": "Brazil",
+      "position": "Web Development Manager",
+      "startDate": "2010-07-01",
+      "endDate": "2012-06-01",
+      "summary": "Team management, responsible for application server and core web solution development",
+      "highlights": [
+        "Managed a team of 5 people to create the new generation of public transportation management software for some cities in Brazil",
+        "GPS Tracking / Route Management Solutions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidade Feevale",
+      "area": "Computer Science",
+      "studyType": "",
+      "startDate": "2010-01-01",
+      "endDate": "2015-12-31"
+    }
+  ],
+  "projects": [
+    {
+      "name": "App Feevale",
+      "description": "Created the mobile App for the University which later was sold to them and still in use to this day.",
+      "highlights": [
+        "15,000+ users"
+      ]
+    },
+    {
+      "name": "Flimbo",
+      "description": "Flimbo was originally a platform for vectorial marketing design and social media integration. It won first place in a startup expo in Brazil and received funding to be developed further.",
+      "highlights": [
+        "First Prize at UFRGS Entrepreneurship Marathon"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "First Prize in SAP InnoWeek",
+      "date": "2014-11-30",
+      "awarder": "SAP",
+      "summary": "Project SAP SmartOfficce"
+    },
+    {
+      "title": "Second Prize at 2nd Logic and Programming Competition",
+      "date": "2012-07-01",
+      "awarder": "University Feevale",
+      "summary": ""
+    },
+    {
+      "title": "Silver Medal",
+      "date": "2009-11-01",
+      "awarder": "OBMEP (Brazilian Math Olympics of Public Schools)",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "Java",
+        "Typescript",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Spring",
+        "Vue",
+        "React",
+        "Express.js",
+        "SAP UI5"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": [
+        "MySQL",
+        "MongoDB",
+        "PostgreSQL",
+        "DynamoDB",
+        "S3",
+        "Redis"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "",
+      "keywords": ["Android"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "keywords": [
+        "PC Games",
+        "Homelab",
+        "Escape Rooms",
+        "Puzzles"
+      ]
+    }
+  ]
+}
