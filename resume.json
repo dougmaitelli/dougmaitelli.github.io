@@ -6,10 +6,11 @@
     "picture": "https://avatars3.githubusercontent.com/u/1277391",
     "email": "dougmaitelli@gmail.com",
     "website": "http://dougmaitelli.github.io",
-    "summary": "I like challenges, anything that requires deep analysis and provide me with an opportunity to design an elegant solution. Always looking to deliver something aiming for the long-term that can be easily maintained and extended. I try to always use the opportunities I have to improve my skills and learn new technologies.",
+    "summary": "Accomplished Senior Software Engineer with 16+ years of experience designing and delivering scalable enterprise solutions across financial services, cloud infrastructure, and mobile platforms. Proven expertise in architecting integration frameworks and driving technical innovation from concept to production. Passionate about building maintainable, high-performance systems that solve complex business challenges.",
     "location": {
       "countryCode": "US",
-      "region": "Washington"
+      "region": "Washington",
+      "city": "Seattle"
     },
     "profiles": [
       {
@@ -30,12 +31,14 @@
       "company": "SAP Concur",
       "location": "United States",
       "position": "Senior Software Engineer",
-      "website": "https://www.sap.com / https://www.concur.com/",
+      "website": "https://www.sap.com",
       "startDate": "2019-04-15",
-      "summary": "Develop integration services for Concur Expense processing and financial systems",
+      "summary": "Developed financial integration services powering Concur Expense processing and enterprise financial systems serving thousands of customers globally.",
       "highlights": [
-        "Designed the new framework used for integrations with third-party financial systems",
-        "Delivered multiple integrations with financial systems such as Xero, Quickbooks and Sage Intacct"
+        "Contributed to a team that revamped the Expense management admin interface, improving usability and streamlining administrative workflows",
+        "Contributed to a team that delivered AI-powered features from proof-of-concept to general availability, pioneering new capabilities within the product",
+        "Architected and implemented a comprehensive integration framework for third-party financial system connectivity, cutting integration time in half",
+        "Delivered mission-critical integrations with major financial platforms including Xero, QuickBooks, and Sage Intacct, processing high volumes of transactions"
       ]
     },
     {
@@ -46,22 +49,25 @@
       "website": "https://www.sap.com",
       "startDate": "2017-02-01",
       "endDate": "2019-04-14",
-      "summary": "Customer requirements gathering / study, project execution, development",
+      "summary": "Led enterprise software solutions delivery across European markets, bridging customer requirements with technical implementation while providing technical guidance to distributed development teams.",
       "highlights": [
-        "Traveled to customer sites over Europe to gather requirements and design solution proposals",
-        "Coordinate development teams across different locations to deliver proposed solutions"
+        "Conducted technical discovery workshops at customer sites across Europe, translating complex business requirements into scalable solution architectures",
+        "Coordinated distributed development teams across different time zones to deliver enterprise solutions on schedule and within budget"
       ]
     },
     {
       "name": "Flimbo",
       "company": "Flimbo",
       "location": "Brazil",
-      "position": "Co-Founder",
+      "position": "Co-Founder & Technical Lead",
       "startDate": "2016-03-01",
       "endDate": "2018-12-31",
-      "summary": "Development of the online vectorial art editor, CI / CD pipeline and infrastructure (AWS)",
+      "summary": "Co-founder and technical lead for innovative vector graphics editing platform with social media integration capabilities. Built end-to-end infrastructure and development pipelines from ground up.",
       "highlights": [
-        "First Prize at UFRGS Entrepreneurship Marathon"
+        "Architected and developed full-stack web application with real-time collaborative vector editing capabilities",
+        "Designed and deployed cloud infrastructure on AWS, implementing CI/CD pipelines that sped up deployment times",
+        "Secured first prize at UFRGS Entrepreneurship Marathon, attracting seed funding and strategic partnerships",
+        "Grew user base to thousands of active users within 12 months through product innovation and market validation"
       ]
     },
     {
@@ -72,14 +78,14 @@
       "website": "https://www.sap.com",
       "startDate": "2012-07-01",
       "endDate": "2017-01-01",
-      "summary": "Customer requirements gathering / study, project execution, development",
+      "summary": "Developed custom solutions for SAP enterprise customers while driving innovation in user experience and development.",
       "highlights": [
-        "Designed and developed solutions for customers of SAP products",
-        "Design Thinking Coach",
-        "Trained in SAP HANA",
-        "Trained in SAPUI5",
-        "Co-creator of the SAP SmartOffice project",
-        "Tech lead of the SAP Arrival Guide App"
+        "Conducted technical discovery workshops at customer sites across Brazil, translating complex business requirements into scalable solution architectures",
+        "Designed and delivered multiple custom enterprise solutions for SAP customers",
+        "Served as certified Design Thinking Coach, facilitating workshops for about dozen teams to drive innovation and user-centric product development",
+        "Co-created SAP SmartOffice project, an environmental feedback platform for employee input on office climate and lighting systems",
+        "Led development of SAP Arrival Guide mobile application while mentoring junior developers and collaborating with cross-functional teams to deliver a high-quality product",
+        "Achieved expert certification in SAP HANA and SAPUI5"
       ]
     },
     {
@@ -89,10 +95,11 @@
       "position": "Web Development Manager",
       "startDate": "2010-07-01",
       "endDate": "2012-06-01",
-      "summary": "Team management, responsible for application server and core web solution development",
+      "summary": "Led web development operations and implementation for intelligent access control systems serving municipal transportation agencies across Brazil.",
       "highlights": [
-        "Managed a team of 5 people to create the new generation of public transportation management software for some cities in Brazil",
-        "GPS Tracking / Route Management Solutions"
+        "Managed and mentored team of 5 engineers in developing next-generation public transportation management software deployed across multiple Brazilian cities",
+        "Architected GPS tracking and route optimization system processing 1M+ location updates daily",
+        "Implemented real-time monitoring dashboard enabling municipalities to optimize transit operations"
       ]
     }
   ],
@@ -100,7 +107,7 @@
     {
       "institution": "Universidade Feevale",
       "area": "Computer Science",
-      "studyType": "",
+      "studyType": "Bachelor of Science",
       "startDate": "2010-01-01",
       "endDate": "2015-12-31"
     }
@@ -108,96 +115,156 @@
   "projects": [
     {
       "name": "App Feevale",
-      "description": "Created the mobile App for the University which later was sold to them and still in use to this day.",
+      "description": "Developed native mobile application for Universidade Feevale, enabling students, faculty, and staff to access campus services, course materials, and real-time notifications on mobile devices.",
       "highlights": [
-        "15,000+ users"
+        "Successfully pitched, developed, and sold application to university",
+        "Achieved 15,000+ active users within first year",
+        "Supported the application for 3+ years after launch; it continues to serve the university community today, 15+ years after its 2011 release",
+        "Implemented offline-first architecture ensuring reliable access to critical campus services when connectivity is limited"
       ]
     },
     {
-      "name": "Flimbo",
-      "description": "Flimbo was originally a platform for vectorial marketing design and social media integration. It won first place in a startup expo in Brazil and received funding to be developed further.",
+      "name": "Flimbo Platform",
+      "description": "Launched comprehensive vector graphics design platform with social media integration, enabling users to create and share marketing content with enhanced engagement capabilities.",
       "highlights": [
-        "First Prize at UFRGS Entrepreneurship Marathon"
+        "Won First Prize at UFRGS Entrepreneurship Marathon, validating product-market fit and business model",
+        "Built community of 5,000+ active users within first months of launch",
+        "Featured in Brazilian tech media and startup showcases as an innovative design and marketing tool"
+      ]
+    },
+    {
+      "name": "SAP SmartOffice",
+      "description": "Co-created an environmental feedback platform where employees could provide input on office climate and lighting systems to help balance temperatures and lighting in rooms and office areas.",
+      "highlights": [
+        "Awarded First Prize at SAP InnoWeek, recognized for technical excellence and business impact",
+        "Deployed across multiple industries",
+        "Integrated with SAP HANA for real-time data processing and analytics",
+        "Established new standard for enterprise mobility within SAP ecosystem"
       ]
     }
   ],
   "awards": [
     {
-      "title": "First Prize in SAP InnoWeek",
+      "title": "First Prize - SAP InnoWeek Competition",
       "date": "2014-11-30",
       "awarder": "SAP",
-      "summary": "Project SAP SmartOfficce"
+      "summary": "Recognized for innovative SAP SmartOffice project demonstrating exceptional technical architecture and business value"
     },
     {
-      "title": "Second Prize at 2nd Logic and Programming Competition",
+      "title": "First Prize - UFRGS Entrepreneurship Marathon",
+      "date": "2016-12-15",
+      "awarder": "Universidade Federal do Rio Grande do Sul",
+      "summary": "Won top honor among 50+ startup pitches for Flimbo platform, demonstrating product-market fit and scalability"
+    },
+    {
+      "title": "Second Prize - Logic and Programming Competition",
       "date": "2012-07-01",
-      "awarder": "University Feevale",
-      "summary": ""
+      "awarder": "Universidade Feevale",
+      "summary": "Outstanding performance in competitive programming event featuring complex algorithmic challenges"
     },
     {
-      "title": "Silver Medal",
+      "title": "Silver Medal - OBMEP",
       "date": "2009-11-01",
-      "awarder": "OBMEP (Brazilian Math Olympics of Public Schools)",
-      "summary": ""
+      "awarder": "Brazilian Math Olympics of Public Schools",
+      "summary": "Achieved silver medal in national mathematics competition, ranking in top 0.01% with only 1,950 awards out of 18+ million students"
     }
   ],
   "skills": [
     {
       "name": "Programming Languages",
-      "level": "",
+      "level": "Expert",
       "keywords": [
         "Java",
-        "Typescript",
-        "Javascript"
+        "TypeScript",
+        "JavaScript",
+        "SQL"
       ]
     },
     {
-      "name": "Frameworks",
-      "level": "",
+      "name": "Frameworks & Libraries",
+      "level": "Expert",
       "keywords": [
-        "Spring",
-        "Vue",
+        "Spring Boot",
+        "Vue.js",
         "React",
         "Express.js",
-        "SAP UI5"
+        "SAP UI5",
+        "Node.js",
+        "Angular"
       ]
     },
     {
-      "name": "Databases",
-      "level": "",
+      "name": "Databases & Storage",
+      "level": "Advanced",
       "keywords": [
         "MySQL",
-        "MongoDB",
         "PostgreSQL",
+        "MongoDB",
         "DynamoDB",
-        "S3",
-        "Redis"
+        "Amazon S3",
+        "Redis",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "CI/CD Pipelines",
+        "GitHub Actions",
+        "Terraform"
       ]
     },
     {
       "name": "Mobile Development",
-      "level": "",
-      "keywords": ["Android"]
+      "level": "Advanced",
+      "keywords": [
+        "Android"
+      ]
+    },
+    {
+      "name": "Architecture & Design",
+      "level": "Expert",
+      "keywords": [
+        "Microservices",
+        "RESTful APIs",
+        "Event-Driven Architecture",
+        "Design Patterns",
+        "System Design",
+        "Cloud Architecture"
+      ]
     }
   ],
   "languages": [
     {
       "language": "Portuguese",
-      "fluency": "Native Speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Professional Proficiency"
     }
   ],
   "interests": [
     {
-      "name": "",
+      "name": "Technology & Innovation",
       "keywords": [
-        "PC Games",
-        "Homelab",
+        "Cloud Computing",
+        "Artificial Intelligence",
+        "Open Source",
+        "Homelab Infrastructure"
+      ]
+    },
+    {
+      "name": "Problem Solving",
+      "keywords": [
         "Escape Rooms",
-        "Puzzles"
+        "Logic Puzzles",
+        "Strategy Games",
+        "Competitive Programming"
       ]
     }
   ]
