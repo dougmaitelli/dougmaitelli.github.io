@@ -11,16 +11,14 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "onchange 'resume.json' -- $npm_execpath run build",
-    "build": "mkdirp ./out && $npm_execpath run build:main && $npm_execpath run build:print",
-    "build:main": "resumed render resume.json --output ./out/index.html --theme jsonresume-theme-even",
-    "build:print": "resumed render resume.json --output ./out/print.html --theme jsonresume-theme-caffeine",
+    "build": "mkdirp ./out && $npm_execpath run build:main",
+    "build:main": "resumed render resume.json --output ./out/index.html --theme jsonresume-theme-neon",
     "deploy": "node ./scripts/deploy.js"
   },
   "type": "module",
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "jsonresume-theme-caffeine": "^1.2.3",
-    "jsonresume-theme-even": "^0.26.1",
+    "jsonresume-theme-neon": "^1.0.0",
     "mkdirp": "^3.0.1",
     "onchange": "^7.1.0",
     "resumed": "^6.1.0"

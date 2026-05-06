@@ -92,7 +92,7 @@
       "name": "Versul Tecnologia de Acesso Inteligente",
       "company": "Versul Tecnologia de Acesso Inteligente",
       "location": "Brazil",
-      "position": "Web Development Manager",
+      "position": "Engineering Manager",
       "startDate": "2010-07-01",
       "endDate": "2012-06-01",
       "summary": "Led web development operations and implementation for intelligent access control systems serving municipal transportation agencies across Brazil.",
@@ -101,15 +101,6 @@
         "Architected GPS tracking and route optimization system processing 1M+ location updates daily",
         "Implemented real-time monitoring dashboard enabling municipalities to optimize transit operations"
       ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Universidade Feevale",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science",
-      "startDate": "2010-01-01",
-      "endDate": "2015-12-31"
     }
   ],
   "projects": [
@@ -172,99 +163,20 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "level": "Expert",
       "keywords": [
         "Java",
         "TypeScript",
-        "JavaScript",
-        "SQL"
+        "JavaScript"
       ]
     },
     {
       "name": "Frameworks & Libraries",
-      "level": "Expert",
       "keywords": [
         "Spring Boot",
         "Vue.js",
         "React",
         "Express.js",
-        "SAP UI5",
-        "Node.js",
         "Angular"
-      ]
-    },
-    {
-      "name": "Databases & Storage",
-      "level": "Advanced",
-      "keywords": [
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "DynamoDB",
-        "Amazon S3",
-        "Redis",
-        "Elasticsearch"
-      ]
-    },
-    {
-      "name": "Cloud & DevOps",
-      "level": "Advanced",
-      "keywords": [
-        "AWS",
-        "Docker",
-        "Kubernetes",
-        "CI/CD Pipelines",
-        "GitHub Actions",
-        "Terraform"
-      ]
-    },
-    {
-      "name": "Mobile Development",
-      "level": "Advanced",
-      "keywords": [
-        "Android"
-      ]
-    },
-    {
-      "name": "Architecture & Design",
-      "level": "Expert",
-      "keywords": [
-        "Microservices",
-        "RESTful APIs",
-        "Event-Driven Architecture",
-        "Design Patterns",
-        "System Design",
-        "Cloud Architecture"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Portuguese",
-      "fluency": "Native"
-    },
-    {
-      "language": "English",
-      "fluency": "Professional Proficiency"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Technology & Innovation",
-      "keywords": [
-        "Cloud Computing",
-        "Artificial Intelligence",
-        "Open Source",
-        "Homelab Infrastructure"
-      ]
-    },
-    {
-      "name": "Problem Solving",
-      "keywords": [
-        "Escape Rooms",
-        "Logic Puzzles",
-        "Strategy Games",
-        "Competitive Programming"
       ]
     }
   ]
