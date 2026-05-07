@@ -344,10 +344,10 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonresume-theme-neon@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/jsonresume-theme-neon/-/jsonresume-theme-neon-1.0.0.tgz#1f68f6666f2b51a2e98d5ee28931b51535bef1a0"
-  integrity sha512-lKuzPj2pq4sqWFT/YPUn5r+SEkToVb19W1kJ4HCf+6JPKRbvluP8rKP/RqACtVPuvkdz80CTXjxfbiSrwfS7wg==
+jsonresume-theme-neon@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jsonresume-theme-neon/-/jsonresume-theme-neon-1.1.0.tgz#436e278fa83892cb129818ef0443433f09aeeffd"
+  integrity sha512-WR9dPe0U6/J7LCUiKs/wSRqpdbqO0eD2Ov0hyTsQ/+k0ZMG47ZLlfM5Q3kVr0FyadlUer1iI7LJeSbdZCMLHRw==
   dependencies:
     "@rbardini/html" "^1.0.0"
     feather-icons "^4.28.0"

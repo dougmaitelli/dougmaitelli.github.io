@@ -27,11 +27,11 @@
   },
   "work": [
     {
-      "name": "SAP Concur",
-      "company": "SAP Concur",
+      "name": "SAP",
+      "description": "Enterprise software solutions",
+      "url": "https://www.sap.com",
       "location": "United States",
       "position": "Senior Software Engineer",
-      "website": "https://www.sap.com",
       "startDate": "2019-04-15",
       "summary": "Developed financial integration services powering Concur Expense processing and enterprise financial systems serving thousands of customers globally.",
       "highlights": [
@@ -42,17 +42,35 @@
       ]
     },
     {
-      "name": "SAP SE",
-      "company": "SAP SE",
+      "name": "SAP",
+      "description": "Enterprise software solutions",
+      "url": "https://www.sap.com",
       "location": "Germany",
       "position": "Senior Solutions Architect / Software Engineer",
-      "website": "https://www.sap.com",
       "startDate": "2017-02-01",
       "endDate": "2019-04-14",
-      "summary": "Led enterprise software solutions delivery across European markets, bridging customer requirements with technical implementation while providing technical guidance to distributed development teams.",
+      "summary": "Facilitated enterprise software solutions delivery across European markets, bridging customer requirements with technical implementation while providing technical guidance to distributed development teams.",
       "highlights": [
         "Conducted technical discovery workshops at customer sites across Europe, translating complex business requirements into scalable solution architectures",
         "Coordinated distributed development teams across different time zones to deliver enterprise solutions on schedule and within budget"
+      ]
+    },
+    {
+      "name": "SAP",
+      "description": "Enterprise software solutions",
+      "url": "https://www.sap.com",
+      "location": "Brazil",
+      "position": "Senior Solutions Architect / Software Engineer",
+      "startDate": "2012-07-01",
+      "endDate": "2017-01-01",
+      "summary": "Developed custom solutions for SAP enterprise customers while driving innovation in user experience and development.",
+      "highlights": [
+        "Conducted technical discovery workshops at customer sites across Brazil, translating complex business requirements into scalable solution architectures",
+        "Designed and delivered multiple custom enterprise solutions for SAP customers",
+        "Served as certified Design Thinking Coach, facilitating workshops for about dozen teams to drive innovation and user-centric product development",
+        "Co-created SAP SmartOffice project, an environmental feedback platform for employee input on office climate and lighting systems",
+        "Led development of SAP Arrival Guide mobile application while mentoring junior developers and collaborating with cross-functional teams to deliver a high-quality product",
+        "Achieved expert certification in SAP HANA and SAPUI5"
       ]
     },
     {
@@ -68,24 +86,6 @@
         "Designed and deployed cloud infrastructure on AWS, implementing CI/CD pipelines that sped up deployment times",
         "Secured first prize at UFRGS Entrepreneurship Marathon, attracting seed funding and strategic partnerships",
         "Grew user base to thousands of active users within 12 months through product innovation and market validation"
-      ]
-    },
-    {
-      "name": "SAP Labs Latin America",
-      "company": "SAP Labs Latin America",
-      "location": "Brazil",
-      "position": "Senior Solutions Architect / Software Engineer",
-      "website": "https://www.sap.com",
-      "startDate": "2012-07-01",
-      "endDate": "2017-01-01",
-      "summary": "Developed custom solutions for SAP enterprise customers while driving innovation in user experience and development.",
-      "highlights": [
-        "Conducted technical discovery workshops at customer sites across Brazil, translating complex business requirements into scalable solution architectures",
-        "Designed and delivered multiple custom enterprise solutions for SAP customers",
-        "Served as certified Design Thinking Coach, facilitating workshops for about dozen teams to drive innovation and user-centric product development",
-        "Co-created SAP SmartOffice project, an environmental feedback platform for employee input on office climate and lighting systems",
-        "Led development of SAP Arrival Guide mobile application while mentoring junior developers and collaborating with cross-functional teams to deliver a high-quality product",
-        "Achieved expert certification in SAP HANA and SAPUI5"
       ]
     },
     {
@@ -115,12 +115,21 @@
       ]
     },
     {
-      "name": "Flimbo Platform",
+      "name": "Flimbo",
       "description": "Launched comprehensive vector graphics design platform with social media integration, enabling users to create and share marketing content with enhanced engagement capabilities.",
       "highlights": [
         "Won First Prize at UFRGS Entrepreneurship Marathon, validating product-market fit and business model",
         "Built community of 5,000+ active users within first months of launch",
         "Featured in Brazilian tech media and startup showcases as an innovative design and marketing tool"
+      ]
+    },
+    {
+      "name": "SAP Arrival Guide",
+      "description": "Led development of a mobile application helping new SAP employees and visitors navigate their first days at SAP offices worldwide, providing onboarding guidance, office information, and orientation resources.",
+      "highlights": [
+        "Led development of the mobile application while mentoring junior developers",
+        "Collaborated with cross-functional teams to deliver a high-quality product",
+        "Enabled smoother onboarding experience for guests arriving at SAP locations"
       ]
     },
     {
