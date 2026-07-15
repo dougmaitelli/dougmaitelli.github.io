@@ -1,12 +1,12 @@
 # Resume
 
-My professional resume.
-https://dougmaitelli.github.io/
+My personal resume, built with [resumed](https://github.com/rbardini/resumed) and my own [jsonresume-theme-neon](https://github.com/dougmaitelli/jsonresume-theme-neon) theme.
 
-## Usage
+Live at: https://dougmaitelli.github.io/
 
-### Build
-`yarn run build`
+## Stack
 
-### Publish
-`yarn run deploy`
+- **[JSON Resume](https://jsonresume.org/)** — open standard for resume data (`resume.json`)
+- **[resumed](https://github.com/rbardini/resumed)** — renders the resume to HTML
+- **[jsonresume-theme-neon](https://github.com/dougmaitelli/jsonresume-theme-neon)** — custom visual theme
+- **GitHub Actions** — builds and deploys on every push to `master`
