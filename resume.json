@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Douglas Maitelli",
-    "label": "Senior Software Engineer · Spend Admin Onboarding and Config",
+    "label": "Senior Software Engineer",
     "image": "https://avatars3.githubusercontent.com/u/1277391",
     "picture": "https://avatars3.githubusercontent.com/u/1277391",
     "email": "dougmaitelli@gmail.com",
@@ -31,7 +31,7 @@
       "description": "Enterprise software solutions",
       "url": "https://www.sap.com",
       "location": "United States",
-      "position": "Senior Software Engineer",
+      "position": "Senior Software Engineer · Spend Admin Onboarding and Config",
       "startDate": "2019-04-15",
       "summary": "Developed financial integration services powering Concur Expense processing and enterprise financial systems serving thousands of customers globally.",
       "highlights": [
