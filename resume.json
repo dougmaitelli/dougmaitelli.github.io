@@ -105,6 +105,24 @@
   ],
   "projects": [
     {
+      "name": "DockDash",
+      "url": "https://github.com/dougmaitelli/DockDash",
+      "description": "Created an open-source, self-hosted platform for discovering, monitoring, and managing Docker containers and network services across multiple hosts.",
+      "highlights": [
+        "Built semantic-version-aware container image monitoring that identifies available upgrades and retrieves the corresponding GitHub release notes",
+        "Attracted 169 GitHub stars and 10 forks while establishing project documentation, automated releases, testing, and security guidance"
+      ]
+    },
+    {
+      "name": "CertVault",
+      "url": "https://github.com/dougmaitelli/CertVault",
+      "description": "Developed an open-source ACME certificate controller that automates issuing, securing, distributing, and renewing TLS certificates for self-hosted infrastructure.",
+      "highlights": [
+        "Implemented wildcard and multi-domain certificate issuance through ACME DNS-01 with support for multiple certificate authorities and DNS providers",
+        "Protected certificate and account private keys using AES-256-GCM encryption and immutable, atomic certificate versioning"
+      ]
+    },
+    {
       "name": "App Feevale",
       "description": "Developed native mobile application for Universidade Feevale, enabling students, faculty, and staff to access campus services, course materials, and real-time notifications on mobile devices.",
       "highlights": [
