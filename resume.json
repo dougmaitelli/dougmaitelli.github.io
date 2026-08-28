@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Douglas Maitelli",
-    "label": "Senior Software Engineer",
+    "label": "Senior Software Engineer · Spend Admin Onboarding and Config",
     "image": "https://avatars3.githubusercontent.com/u/1277391",
     "picture": "https://avatars3.githubusercontent.com/u/1277391",
     "email": "dougmaitelli@gmail.com",
-    "website": "http://dougmaitelli.github.io",
+    "website": "https://dougmaitelli.github.io",
     "summary": "Accomplished Senior Software Engineer with 16+ years of experience designing and delivering scalable enterprise solutions across financial services, cloud infrastructure, and mobile platforms. Proven expertise in architecting integration frameworks and driving technical innovation from concept to production. Passionate about building maintainable, high-performance systems that solve complex business challenges.",
     "location": {
       "countryCode": "US",
@@ -35,8 +35,8 @@
       "startDate": "2019-04-15",
       "summary": "Developed financial integration services powering Concur Expense processing and enterprise financial systems serving thousands of customers globally.",
       "highlights": [
-        "Contributed to a team that revamped the Expense management admin interface, improving usability and streamlining administrative workflows",
-        "Contributed to a team that delivered AI-powered features from proof-of-concept to general availability, pioneering new capabilities within the product",
+        "Developed key components of a redesigned Expense management admin interface, improving usability and streamlining administrative workflows",
+        "Delivered AI-powered product capabilities from proof of concept through general availability, integrating them into production Expense workflows",
         "Architected and implemented a comprehensive integration framework for third-party financial system connectivity, cutting integration time in half",
         "Delivered mission-critical integrations with major financial platforms including Xero, QuickBooks, and Sage Intacct, processing high volumes of transactions"
       ]
@@ -103,6 +103,15 @@
       ]
     }
   ],
+  "education": [
+    {
+      "institution": "Universidade Feevale",
+      "url": "https://www.feevale.br",
+      "area": "Computer Science",
+      "studyType": "Bachelor's Degree",
+      "endDate": "2017"
+    }
+  ],
   "projects": [
     {
       "name": "DockDash",
@@ -124,6 +133,7 @@
     },
     {
       "name": "App Feevale",
+      "url": "https://www.feevale.br/servicos/web/aplicativo",
       "description": "Developed native mobile application for Universidade Feevale, enabling students, faculty, and staff to access campus services, course materials, and real-time notifications on mobile devices.",
       "highlights": [
         "Successfully pitched, developed, and sold application to university",
@@ -192,18 +202,51 @@
       "name": "Programming Languages",
       "keywords": [
         "Java",
+        "Go",
+        "Rust",
         "TypeScript",
-        "JavaScript"
+        "JavaScript",
+        "SQL"
       ]
     },
     {
       "name": "Frameworks & Libraries",
       "keywords": [
         "Spring Boot",
-        "Vue.js",
         "React",
+        "Vite",
         "Express.js",
         "Angular"
+      ]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "DynamoDB",
+        "MariaDB",
+        "SQLite",
+        "SAP HANA"
+      ]
+    },
+    {
+      "name": "Architecture & Security",
+      "keywords": [
+        "Distributed Systems",
+        "Enterprise Integration",
+        "REST APIs",
+        "OIDC",
+        "OAuth 2.0",
+        "ACME",
+        "PKI"
       ]
     }
   ]
