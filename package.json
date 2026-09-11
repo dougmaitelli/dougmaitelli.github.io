@@ -19,6 +19,6 @@
     "jsonresume-theme-neon": "^1.2.0",
     "mkdirp": "^3.0.1",
     "onchange": "^7.1.0",
-    "resumed": "^6.1.0"
+    "resumed": "^7.0.0"
   }
 }
