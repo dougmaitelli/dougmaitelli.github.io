@@ -436,10 +436,10 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-resumed@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/resumed/-/resumed-7.0.0.tgz#42ef6cdd6e78b5926d3afd72eaf4c8fbe5ecf98a"
-  integrity sha512-Yoqizy6pdUEQSM+CCcmco5nzuLYb02v/UFsgMQJCIGlqqrlKy8hmbrCChAIeTXbRDgi+obNlRe2d0/UAky5VBA==
+resumed@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/resumed/-/resumed-7.1.0.tgz#91fb0fa5cf46d53dd01fa3b0f3698445f5c994c1"
+  integrity sha512-BwNj/m93UNnZWBnIlU9juIEmKvyt/u9ghoszu8mGHChliCk82+WmKDNpb7ZWFwcbkmVYaJTQkDe0hTY0Mqt61g==
   dependencies:
     "@jsonresume/schema" "^1.0.0"
     sade "^1.7.0"
